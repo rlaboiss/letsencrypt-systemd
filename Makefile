@@ -23,7 +23,7 @@ uninstall:
 	rm -rf $(BIN_DIR)/$(STEM).sh $(SYSTEMD_DIR)/$(STEM).*
 
 check-log:
-	systemctl status $(STEM).service
+	-systemctl status $(STEM).service
 
 clean:
 	rm -f service timer
