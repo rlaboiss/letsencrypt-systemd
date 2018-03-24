@@ -22,7 +22,10 @@ run-service:
 uninstall:
 	rm -rf $(BIN_DIR)/$(STEM).sh $(SYSTEMD_DIR)/$(STEM).*
 
+check-log:
+	systemctl status $(STEM).service
+
 clean:
 	rm -f service timer
 
-.PHONY: all install run-service uninstall clean
+.PHONY: all install run-service uninstall check-log clean

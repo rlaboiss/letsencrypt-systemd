@@ -38,6 +38,11 @@ can be done separately, as follows:
     sudo make install
     sudo make run-service
 
+It is possible to verify that the systemd service is running by inspecting
+the systemd log, with this command:
+
+    sudo make check-log
+
 The files can be uninstalled from systemd with:
 
     sudo make uninstall
