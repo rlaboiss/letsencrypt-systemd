@@ -1,0 +1,8 @@
+[Unit]
+Description=Renew Let's Encrypt certificate daily
+
+[Timer]
+OnCalendar=*-*-* @RENEW_TIME@
+
+[Install]
+WantedBy=multi-user.target

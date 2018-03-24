@@ -1,0 +1,6 @@
+[Unit]
+Description=Renew the Let's Encrypt TLS certificate
+
+[Service]
+Type=simple
+ExecStart= @BIN_DIR@/@STEM@.sh
