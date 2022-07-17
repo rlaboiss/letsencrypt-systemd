@@ -1,5 +1,5 @@
 #!/bin/sh 
 
 service apache2 stop
-letsencrypt renew
+certbot renew
 service apache2 start
