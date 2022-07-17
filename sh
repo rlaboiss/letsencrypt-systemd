@@ -1,5 +1,5 @@
 #!/bin/sh 
 
-service apache2 stop
+systemctl stop apache2.service
 certbot renew
-service apache2 start
+systemctl start apache2.service
