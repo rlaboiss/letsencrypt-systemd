@@ -24,6 +24,7 @@ uninstall:
 
 check-log:
 	-systemctl status $(STEM).service
+	-systemctl status $(STEM).timer
 
 clean:
 	rm -f service timer
